@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Sergoe-bold';
+    src: url('asstes/SegoeUI-VF/Segoe-UI-Variable-Static-Text-Bold.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Sergoe-semibold';
+    src: url('asstes/SegoeUI-VF/Segoe-UI-Variable-Static-Text-Semibold.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Sergoe-regular';
+    src: url('asstes/SegoeUI-VF/SegoeUI-VF.ttf') format('truetype');
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("asstes/background.jpg");
+    background-size: cover; /* Isso faz a imagem cobrir toda a tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Isso previne a rolagem */
+  }
+.tela{
+    width: 80%; /* Ajuste a largura conforme necessário */
+    height: 85%; /* Ajuste a altur conforme necessário */
+    background-color: rgba(0, 0, 0, 0.2); /* Cor de fundo com transparência */
+    border: 2px solid rgba(255, 255, 255, 0.1); /* Borda com transparência */
+    box-shadow: inset 0px 0px 5px rgba(255, 255, 2255, 0.1); /* Sombra suave para dar profundidade */
+    backdrop-filter: blur(30px); /* Efeito de desfoque no fundo */
+    border-radius: 30px;
+    padding: 25px;
+}
+
+h1{
+    text-align:left;
+    font-family:'Sergoe-bold';
+    font-size: 64px;
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+    color:white;
+}
+
+h2{
+    text-align:left;
+    font-family:'Sergoe-semibold';
+    font-size: 32px;
+    margin: 0px;
+    padding: 0px;
+    color: rgba(255,255,255,0.9);
+    margin: 0px 0px 25px 0px;
+}
+
+.left{
+    padding: 3% 0% 0% 5%;
+    width: 50%;
+}
+
+.text{
+    width: 80%;
+    font-family: 'Sergoe-regular';
+    color: rgba(255,255,255,0.8);
+    font-size: 24px;
+}
+
+.icones{
+    display: flex;
+    align-items: center;
+    font-family:'Sergoe-semibold';
+    color:white;
+    font-size: 24px;
+    padding: 5px;
+}
+
+.icon{
+    margin-right: 5px;
+}
+
+.navibar{
+    margin-top: 25px;
+    height: 125px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#user:hover,#project:hover,#contat:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px); /* Efeito de desfoque no fundo */
+    border-radius: 10px;
+    cursor: pointer;
+}
+
