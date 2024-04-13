@@ -60,7 +60,7 @@ a{
 h1{
     text-align:left;
     font-family:'Sergoe-bold';
-    font-size: 64px;
+    font-size: 32px;
     font-weight: normal;
     color:white;
     margin-block-start: 0em;
@@ -71,7 +71,7 @@ h1{
 h2{
     text-align:left;
     font-family:'Sergoe-semibold';
-    font-size: 32px;
+    font-size: 24x;
     margin: 0px;
     padding: 0px;
     color: rgba(255,255,255,0.9);
@@ -82,7 +82,7 @@ p#caption{
     width: 80%;
     font-family: 'Sergoe-regular';
     color: rgba(255,255,255,0.8);
-    font-size: 24px;
+    font-size: 16px;
 }
 #icones{
     margin-block-start: 0em;
@@ -96,7 +96,7 @@ p#caption{
     max-width: 35%;
     font-family:'Sergoe-semibold';
     color:white;
-    font-size: 26px;
+    font-size: 20px;
     flex-direction: column;
     transition: background 0.5s;
 }
