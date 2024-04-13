@@ -84,6 +84,7 @@ p#caption{
     color: rgba(255,255,255,0.8);
     font-size: 16px;
 }
+
 #icones{
     margin-block-start: 0em;
     margin-block-end: 0em;
@@ -119,13 +120,14 @@ p#caption{
     margin-block-end: 0;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    margin-left: 0.5em;
+    margin-left: 0.0em;
  }
 
  #icones a{
    display: flex;
    justify-content: center;
-    color:#ffffff;
+   align-items: center;
+   color:#ffffff;
  }
 
  #icones svg, #icones path{
