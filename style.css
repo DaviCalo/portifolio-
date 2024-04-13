@@ -60,7 +60,7 @@ a{
 h1{
     text-align:left;
     font-family:'Sergoe-bold';
-    font-size: 64px;
+    font-size: 48px;
     font-weight: normal;
     color:white;
     margin-block-start: 0em;
@@ -71,18 +71,18 @@ h1{
 h2{
     text-align:left;
     font-family:'Sergoe-semibold';
-    font-size: 32x;
+    font-size: 28px;
     margin: 0px;
     padding: 0px;
     color: rgba(255,255,255,0.9);
-    margin: 0px 0px 25px 0px;
+    margin: 0px 0px 15px 0px;
 }
 
 p#caption{
     width: 80%;
     font-family: 'Sergoe-regular';
     color: rgba(255,255,255,0.8);
-    font-size: 16px;
+    font-size: 18px;
 }
 
 #icones{
@@ -97,7 +97,7 @@ p#caption{
     max-width: 35%;
     font-family:'Sergoe-semibold';
     color:white;
-    font-size: 20px;
+    font-size: 22px;
     flex-direction: column;
     transition: background 0.5s;
 }
@@ -172,9 +172,9 @@ p#caption{
     overflow-x:visible;
     scrollbar-color: dark;
     scrollbar-color: rgba(255, 255, 255,0.1) rgba(0, 0, 0,0.1);
-    font-family: 'Sergoe-regular';
-    color: rgba(255,255,255,0.9);
-    font-size: 20px;
+    font-family: 'Sergoe-semibold';
+    color: rgba(255,255,255,0.8);
+    font-size: 17px;
 }
 
 #articlaboutme p{
