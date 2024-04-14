@@ -12,7 +12,8 @@
 }
 
 body {
-    background:#0D0D0D;
+    /*background:#0D0D0D;*/
+    background:#202020;
     background-size: cover; /* Isso faz a imagem cobrir toda a tela */
     display: flex;
     justify-content: center;
@@ -29,10 +30,11 @@ html, body {
 .tela{
     width: 80%; /* Ajuste a largura conforme necessário */
     height: 85%; /* Ajuste a altur conforme necessário */
-    background-color: rgba(50, 50, 50); /* Cor de fundo com transparência */
+    background-color: #2C2C2C;/* Cor de fundo com transparência */
+     /*background:rgba(50, 50, 50);*/
     /*border: 2px solid rgba(255, 255, 255, 0.1); /* Borda com transparência */
     /*box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.1); /* Sombra suave para dar profundidade */
-    box-shadow: 0px 0px  25px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.28);
     backdrop-filter: blur(40px); /* Efeito de desfoque no fundo */
     border-radius: 30px;
     padding: 25px;
@@ -60,7 +62,7 @@ a{
 h1{
     text-align:left;
     font-family:'Sergoe-bold';
-    font-size: 48px;
+    font-size: 52px;
     font-weight: normal;
     color:white;
     margin-block-start: 0em;
@@ -71,7 +73,7 @@ h1{
 h2{
     text-align:left;
     font-family:'Sergoe-semibold';
-    font-size: 28px;
+    font-size: 32px;
     margin: 0px;
     padding: 0px;
     color: rgba(255,255,255,0.9);
@@ -82,7 +84,7 @@ p#caption{
     width: 80%;
     font-family: 'Sergoe-regular';
     color: rgba(255,255,255,0.8);
-    font-size: 18px;
+    font-size: 20px;
 }
 
 #icones{
@@ -102,11 +104,22 @@ p#caption{
     transition: background 0.5s;
 }
 
-#aboutme:hover, #project:hover, #contat:hover{
+#aboutmeicon:hover, #projecticon:hover, #contaticon:hover{
     backdrop-filter: blur(15px); /* Efeito de desfoque no fundo */
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     transition: background 0.5s;
+}
+
+#projecticon.hover{
+    backdrop-filter: blur(15px); /* Efeito de desfoque no fundo */
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: background 0.5s;
+}
+
+#aboutmeicon a{
+    margin-left: -0.5em;
 }
 
 #icones li{
@@ -137,13 +150,6 @@ p#caption{
 
 
 
-
-
-
-
-
-
- 
  #links ul{
     list-style-type: none;
     display: flex;
@@ -157,7 +163,11 @@ p#caption{
     
 }
 
-#links svg,#links path{
+#links path{
+    fill: rgba(255,255,255,0.5);
+}
+
+#links a:hover{
     fill: rgba(255,255,255,0.9);
 }
 
@@ -165,18 +175,113 @@ p#caption{
     margin-right: 1em;
 }
 
- .right{
-    padding: 3% 0.5% 0% 0%;
+
+
+
+
+
+
+
+
+
+
+
+ #main{
+    padding: 2% 2% 0% 0%;
     width: 49%;
     overflow-y: scroll;
     overflow-x:visible;
     scrollbar-color: dark;
     scrollbar-color: rgba(255, 255, 255,0.1) rgba(0, 0, 0,0.1);
-    font-family: 'Sergoe-semibold';
-    color: rgba(255,255,255,0.8);
-    font-size: 17px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    color: rgba(225,225,225);
+    font-size: 15px;
+    cursor: default;
 }
 
-#articlaboutme p{
-    text-indent:1em;
+.cards{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.cards:hover{
+    backdrop-filter: blur(15px); /* Efeito de desfoque no fundo */
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition: background 0.5s;
+}
+
+
+#project:hover .cards:not(:hover) {
+  opacity: 0.75; /* Diminui a opacidade */
+}
+
+.buttomcard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3px;
+}
+
+.buttomcard a{
+    backdrop-filter: blur(15px); /* Efeito de desfoque no fundo */
+    background-color: rgba(150, 150, 150,0.1);
+    border-radius: 4px;
+    transition: background 0.5s;
+    padding: 1px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    font-family: 'Sergoe-semibold';
+}
+
+.buttomcard a:visited{
+    border: 1px solid white;
+}
+
+.buttomcard a:hover{
+    border: 1px solid white;
+}
+
+.buttomcard a:active{
+    border: 1px solid white;
+    background-color: rgba(150, 150, 150);
+}
+
+.textcard p{
+    font-family:'Segoe UI';
+    color: rgba(255,255,255);
+    font-size: 14px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    unicode-bidi: isolate;
+    cursor: default;
+}
+.textcard{
+    margin-left: 5px;
+}
+
+.titlecard{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.cards img{
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.cards:hover img{
+    border-radius: 5px;
+    border: 2px solid rgba(150, 150, 150, 0.1);
 }
