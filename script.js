@@ -1,16 +1,31 @@
-var mains = document.getElementById('main');
-mains.addEventListener('scroll', () => {
-        var section = document.getElementById('projectcard'); // Substitua 'sua-secao' pelo ID da seção
-        var sectionTop = section.offsetTop; // Distância da seção ao topo da página
-        var nav = document.getElementById('projecticon');
-        var scrollVertical = document.getElementById('main').scrollTop
+var mains = document.getElementById('main').addEventListener('scroll', () => {
+        var scrollVertical = document.getElementById('main').scrollTop;
 
-        if (scrollVertical>= sectionTop) {
-            nav.classList.add('hover');
-            console.log("asddv");
-        } else {
-            nav.classList.remove('hover');
-            console.log("asdd");
-            console.log(scrollVertical, sectionTop );
+        var projectsection = document.getElementById('articleproject');
+        var projectsectionTop = projectsection.offsetTop; 
+        var projecticon = document.getElementById('projecticon');
+
+        var aboutsection = document.getElementById('articlaboutme');
+        var aboutmesectionTop = aboutsection.offsetTop; 
+        var aboutmeicon = document.getElementById('aboutmeicon');
+
+        var contatsection = document.getElementById('articlacontat');
+        var contatsectionTop = contatsection.offsetTop; 
+        var contaticon = document.getElementById('contaticon');
+
+        if (scrollVertical >= projectsectionTop && scrollVertical <= contatsectionTop) {
+            projecticon.classList.add('hover');
+            aboutmeicon.classList.remove('hover');
+            contaticon.classList.remove('hover');
+            
+        } else if(scrollVertical <= projectsectionTop){
+            aboutmeicon.classList.add('hover');
+            projecticon.classList.remove('hover');
+            contaticon.classList.remove('hover');
+        }
+        else{
+            contaticon.classList.add('hover');
+            projecticon.classList.remove('hover');
+            aboutmeicon.classList.remove('hover');
         }
     })
