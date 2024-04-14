@@ -1,3 +1,6 @@
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.getElementById('aboutmeicon').classList.add('hover');
+  });
 var mains = document.getElementById('main').addEventListener('scroll', () => {
         var scrollVertical = document.getElementById('main').scrollTop;
 
