@@ -50,4 +50,19 @@ var mains = document.getElementById('main').addEventListener('scroll', () => {
             aboutmeicon.classList.remove('hover');
         }
         */
+    // Get a reference to the scrollTo function
+    
     })
+
+    const { scrollTo } = document.getElementById('main');
+
+    // Override the scrollTo function
+    document.getElementById('main').scrollTo = (...args) => {
+        // Create a new scrollTo function that scrolls smoothly
+        const [x = 0, y = 0] = args;
+        document.getElementById('main').scroll({
+            top: y,
+            left: x,
+            behavior: 'smooth'
+        });
+    };
