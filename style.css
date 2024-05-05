@@ -14,7 +14,6 @@
 body {
     /*background:#0D0D0D;*/
     background:#202020;
-    background-size: cover; /* Isso faz a imagem cobrir toda a tela */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -232,7 +231,7 @@ p#caption{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
     color: rgba(225,225,225,0.95);
-    font-size: 18px;
+    font-size: 16px;
     padding: 0px 0px 0px 1em;
     margin-bottom: 80px;
 }
@@ -375,4 +374,66 @@ footer{
     font-family:'Segoe UI';
     font-size: 14px;
     color: rgba(255,255,255,0.75);
+}
+
+@media (max-width: 767px){
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        }
+    body {
+        /*background:#0D0D0D;*/
+        background:#202020;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        scrollbar-color: dark;
+        scrollbar-color: rgba(255, 255, 255,0.1) rgba(0, 0, 0,0.1);
+    }
+
+    nav{
+        display: none;
+    }
+
+    .tela{
+        width: 85%; /* Ajuste a largura conforme necessário */
+        height: 85%; /* Ajuste a altur conforme necessário */
+        background-color: #2C2C2C;/* Cor de fundo com transparência */
+         /*background:rgba(50, 50, 50);*/
+        /*border: 2px solid rgba(255, 255, 255, 0.1); /* Borda com transparência */
+        /*box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.1); /* Sombra suave para dar profundidade */
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.28);
+        backdrop-filter: blur(40px); /* Efeito de desfoque no fundo */
+        border-radius: 30px;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    #left{
+        padding: 3% 0% 0% 3%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    #main{
+        padding: 2% 2% 0% 0%;
+        width: 100%;
+        overflow-y:visible;
+    }
+
+
+
+
+
+
+
+
+
+    
 }
