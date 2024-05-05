@@ -103,6 +103,10 @@ p#caption{
     transition: background 0.5s;
 }
 
+#contatnav{
+    display: none;
+}
+
 #aboutmenav:hover, #projectnav:hover, #contatnav:hover{
     backdrop-filter: blur(15px); 
     background-color: rgba(255, 255, 255, 0.1);
