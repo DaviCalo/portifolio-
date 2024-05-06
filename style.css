@@ -229,6 +229,8 @@ p#caption{
     overflow-x: visible;
     scrollbar-color: dark;
     scrollbar-color: rgba(255, 255, 255,0.1) rgba(0, 0, 0,0.1);
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
 }
 #articleaboutme{
     cursor: default;
