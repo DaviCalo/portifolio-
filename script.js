@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById('aboutmenav').classList.add('hover');
     document.getElementById('linkaboutme').classList.add('hover');
-});
-
+  });
 
 var mains = document.getElementById('main').addEventListener('scroll', () => {
-    var scrollVertical = document.getElementById('main').scrollTop;
-var aboutmenav = document.getElementById('aboutmenav');
-var aboutmesectionnav = document.getElementById('linkaboutme');
+        var scrollVertical = document.getElementById('main').scrollTop;
+
+        var aboutmenav = document.getElementById('aboutmenav');
+        var aboutmesectionnav = document.getElementById('linkaboutme');
 
 var projectsectionTop = (document.getElementById('articleproject')).offsetTop; 
 var projectnav = document.getElementById('projectnav');
@@ -24,19 +24,21 @@ const icons = {
     aboutmesectionnav: aboutmesectionnav.classList
 };
 
-const removeHover = (icon) => icons[icon].remove('hover');
-const addHover = (icon) => icons[icon].add('hover');
-     if (scrollVertical+50 >= projectsectionTop && scrollVertical <= contatsectionTop) {
-        //GAMBIARRA
-        ['aboutmenav', 'contatnav','aboutmesectionnav'].forEach(removeHover);
-        ['projectnav', 'projectsectionnav'].forEach(addHover);
-    } else if(scrollVertical <= projectsectionTop){
-        ['projectnav', 'contatnav','projectsectionnav'].forEach(removeHover);
-        ['aboutmenav', 'aboutmesectionnav'].forEach(addHover);
-    } else {
-        ['projectnav', 'aboutmenav','aboutmesectionnav'].forEach(removeHover);
-        addHover('contatnav');
-     }
+        const removeHover = (icon) => icons[icon].remove('hover');
+        const addHover = (icon) => icons[icon].add('hover');
+
+        if (scrollVertical+50 >= projectsectionTop && scrollVertical <= contatsectionTop) {
+            //GAMBIARRA
+            ['aboutmenav', 'contatnav','aboutmesectionnav'].forEach(removeHover);
+            ['projectnav', 'projectsectionnav'].forEach(addHover);
+        } else if(scrollVertical <= projectsectionTop){
+            ['projectnav', 'contatnav','projectsectionnav'].forEach(removeHover);
+            ['aboutmenav', 'aboutmesectionnav'].forEach(addHover);
+        } else {
+            ['projectnav', 'aboutmenav','aboutmesectionnav'].forEach(removeHover);
+
+            addHover('contatnav');
+        }
       /** 
           if (scrollVertical >= projectsectionTop && scrollVertical <= contatsectionTop) {
             projecticon.classList.add('hover');
