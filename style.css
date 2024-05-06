@@ -27,14 +27,14 @@ html, body {
 }
 
 .tela{
-    width: 85%; /* Ajuste a largura conforme necessário */
-    height: 85%; /* Ajuste a altur conforme necessário */
-    background-color: #2C2C2C;/* Cor de fundo com transparência */
-     /*background:rgba(50, 50, 50);*/
-    /*border: 2px solid rgba(255, 255, 255, 0.1); /* Borda com transparência */
-    /*box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.1); /* Sombra suave para dar profundidade */
+    width: 85%;
+    height: 85%;
+    background-color: #2C2C2C;
+    /*background:rgba(50, 50, 50);*/
+    /*border: 2px solid rgba(255, 255, 255, 0.1); */
+    /*box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.1);*/
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.28);
-    backdrop-filter: blur(40px); /* Efeito de desfoque no fundo */
+    backdrop-filter: blur(40px);
     border-radius: 30px;
     padding: 25px;
     display: flex;
@@ -103,8 +103,12 @@ p#caption{
     transition: background 0.5s;
 }
 
+#contatnav{
+    display: none;
+}
+
 #aboutmenav:hover, #projectnav:hover, #contatnav:hover{
-    backdrop-filter: blur(15px); /* Efeito de desfoque no fundo */
+    backdrop-filter: blur(15px); 
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     transition: 0.5s;
@@ -115,7 +119,7 @@ p#caption{
 }
 
 #aboutmenav.hover, #projectnav.hover, #contatnav.hover {
-    backdrop-filter: blur(15px); /* Efeito de desfoque no fundo */
+    backdrop-filter: blur(15px); 
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     display: flex;
@@ -255,7 +259,7 @@ p::selection{
 }
 
 .cards:hover{
-    backdrop-filter: blur(15px); /* Efeito de desfoque no fundo */
+    backdrop-filter: blur(15px); 
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 8px;
     transition: background 0.5s;
@@ -263,19 +267,27 @@ p::selection{
 
 
 #articleproject:hover .cards:not(:hover) {
-  opacity: 0.6; /* Diminui a opacidade */
+  opacity: 0.6;
+}
+
+.actioncard{
+    width: 195px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .buttomcard{
     display: flex;
+    width: 100%;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 3px;
+    margin-top: 8px;
 }
 
 .buttomcard a{
-    backdrop-filter: blur(15px); /* Efeito de desfoque no fundo */
+    backdrop-filter: blur(15px); 
     background-color: rgba(150, 150, 150,0.1);
     border-radius: 4px;
     transition: background 0.5s;
@@ -340,6 +352,7 @@ p::selection{
 
 .cards:hover img{
     border-radius: 5px;
+    
     border: 2px solid rgba(150, 150, 150, 0.1);
 }
 
@@ -368,6 +381,7 @@ p::selection{
 }
 
 
+
 footer{
     padding: 0px 0px 0px 1em;
     margin: 0px 0px 0px 0px;
@@ -376,12 +390,42 @@ footer{
     color: rgba(255,255,255,0.75);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 767px){
+
     html, body {
         height: 100%;
         margin: 0;
         padding: 0;
-        }
+    }
+    
     body {
         /*background:#0D0D0D;*/
         background:#202020;
@@ -397,16 +441,16 @@ footer{
     }
 
     .tela{
-        width: 85%; /* Ajuste a largura conforme necessário */
-        height: 85%; /* Ajuste a altur conforme necessário */
-        background-color: #2C2C2C;/* Cor de fundo com transparência */
+        width: 100%;
+        height: 100%; 
+        background-color: #2C2C2C;
          /*background:rgba(50, 50, 50);*/
-        /*border: 2px solid rgba(255, 255, 255, 0.1); /* Borda com transparência */
-        /*box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.1); /* Sombra suave para dar profundidade */
+        /*border: 2px solid rgba(255, 255, 255, 0.1); 
+        /*box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.1); */
         box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.28);
-        backdrop-filter: blur(40px); /* Efeito de desfoque no fundo */
-        border-radius: 30px;
-        padding: 25px;
+        backdrop-filter: blur(40px);
+        border-radius: 0px;
+        padding: 5px;
         display: flex;
         flex-direction: column;
         overflow-y: scroll;
@@ -414,18 +458,40 @@ footer{
     }
 
     #left{
-        padding: 3% 0% 0% 3%;
+        padding: 8% 0% 0% 3%;
         width: 100%;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
     }
+    
+    h1{
+        font-size: 24px;
+    }
+    
+    h2{
+        font-size: 18px;
+    }
+    
+    p#caption{
+        font-size: 16px;
+    }
+
+    #links svg{
+        width: 20px;
+        height: 20px;
+    }
 
     #main{
-        padding: 2% 2% 0% 0%;
+        padding: 0%;
         width: 100%;
         overflow-y:visible;
     }
+
+    #articleaboutme{
+        font-size: 14px;
+    }
+
 
 
 
