@@ -5,39 +5,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Davi Calô</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/x-icon" href="/assets/x-icon.png">
+        <link rel="icon" type="image/x-icon" href="scr/x-icon.png">
     </head>
     <body>
-        <div class="tela">
-            <div id="left"">
-                <section id="top">
+        <div class="background">
+            <div id="before-main">
+                <header id="header">
                     <h1>Davi Calô</h1>
                     <h2>Desenvolvedor</h2>
-                    <p id="caption">
+                    <p id="subtitle">
                         Estudante de Sistemas e Midias Digitais na Universidade Federal do Ceará.
                     </p>
-                </section>
+                </header>
 
                 <nav>
                     <ul id="navbar">
-                        <li id="aboutmenav"> 
-                            <a id="linkaboutme" href="#articleaboutme" target="_self"> 
+                        <li id="aboutme-nav"> 
+                            <a id="aboutme-link" href="#aboutme-article-main" target="_self"> 
                                 <svg width="25" height="25" viewBox="0 0 16 19" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M7.5 0C4.91119 0 2.8125 2.06638 2.8125 4.61539C2.8125 7.16437 4.91119 9.23077 7.5 9.23077C10.0888 9.23077 12.1875 7.16437 12.1875 4.61539C12.1875 2.06638 10.0888 0 7.5 0ZM1.99214 11.0769C0.892153 11.0769 9.375e-06 11.9544 0 13.038V13.3846C0 15.1179 0.910158 16.4155 2.30634 17.2524C3.67927 18.0754 5.52473 18.4615 7.5 18.4615C9.47527 18.4615 11.3207 18.0754 12.6937 17.2524C14.0898 16.4155 15 15.1179 15 13.3846V13.0379C15 11.9544 14.1078 11.0769 13.0079 11.0769H1.99214Z"/>
                                 </svg> 
                                Sobre
                             </a>
                         </li>
-                        <li id="projectnav">
-                            <a id="linkproject" href="#articleproject" target="_self">
+                        <li id="project-nav">
+                            <a id="project-link" href="#project-article-main" target="_self">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 25 25" fill="none">
                                     <path d="M5.25 3C3.45507 3 2 4.45507 2 6.25V15.1618L4.04451 11.6206C4.8037 10.3057 6.20674 9.49561 7.72512 9.49561L20 9.49561V8.75C20 6.95507 18.5449 5.5 16.75 5.5H11.5607L9.71967 3.65901C9.29771 3.23705 8.72542 3 8.12868 3H5.25ZM7.72512 10.9956L20.7445 10.9956C22.4765 10.9956 23.5591 12.8706 22.6931 14.3706L19.6569 19.6294C19.1657 20.4802 18.2578 21.0044 17.2753 21.0044H4.25594C2.52389 21.0044 1.44136 19.1294 2.30738 17.6294L5.34355 12.3706C5.83479 11.5198 6.74264 10.9956 7.72512 10.9956Z" fill="#242424"/>
                                 </svg>
                                Projetos
                             </a>
                         </li>
-                        <li id="contatnav">
-                            <a id="linkcontat" href="#articlecontact" target="_self">
+                        <li id="contat-nav">
+                            <a id="contat-link" href="#articlecontact" target="_self">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="28" viewBox="0 0 30 40" fill="none">
                                     <path d="M13.0946 2.8943C12.3154 1.33601 10.6859 0.0754039 8.68335 0.297741C6.89197 0.496636 4.23235 1.16288 2.4203 3.34634C0.558863 5.58932 -0.135147 9.08817 1.29434 14.3285C2.81963 19.9201 5.08606 25.4313 7.9028 29.8791C10.6988 34.2941 14.143 37.8273 18.094 39.1824C21.5884 40.3808 24.2596 39.8808 26.2093 38.5645C28.0881 37.2961 29.1215 35.3872 29.6554 34.0646C30.2533 32.5839 29.8592 31.0433 29.0787 29.9082L26.2017 25.7238C24.8969 23.8261 22.5078 23.0003 20.3096 23.6872L16.3345 24.9294C16.047 25.0193 15.769 24.9283 15.6108 24.7429C13.8418 22.6702 11.8583 19.7785 11.3188 16.8526C11.3009 16.7555 11.3204 16.6759 11.3522 16.6224C11.9367 15.6397 12.9435 14.5257 13.9446 13.551C15.642 11.8984 16.2844 9.27302 15.1652 7.03502L13.0946 2.8943Z" fill="#D9D9D9"/>
                                 </svg>   
@@ -47,7 +47,7 @@
                     </ul>
                 </nav>
 
-                <section id="links">
+                <section id="professional-links-section">
                     <ul>
                         <li title="GitHub">
                             <a href="https://github.com/DaviCalo" target="_blank">
@@ -75,8 +75,8 @@
                 </section>
             </div> 
             
-            <main id="main" class="right">
-                <article id="articleaboutme">
+            <main id="main">
+                <article id="aboutme-article-main">
                     <p>
                         Em 2020, me deparei com a programação e imediatamente me apaixonei por ela. Resultado:Tomei então a decisão de fazer um curso relacionado à programação. Então, agora estou na faculdade, estudando Sistemas e Mídia Digitais. É incrível porque aprendo como codificar e também criar outras coisas de mídia.
                     </p>
@@ -85,82 +85,82 @@
                     </p>   
                 </article>
 
-                <article id="articleproject">
-                    <div id="projectcardgravity" class="cards">
-                        <div class="actioncard">
-                            <img src="assets/imgproject/gravitation.png" alt="" width="190" height="95">
+                <article id="project-article-main">
+                    <div id="gravity-project-card" class="card-block">
+                        <div class="card-action-section">
+                            <img src="scr/imgproject/gravitation.png" alt="" width="190" height="95">
                             <div class="buttomcard">
                                 <a class="buttondeploy" href="https://openprocessing.org/sketch/2095943" target="_blank">Deploy</a>
                                 <a class="buttoncode" href="https://openprocessing.org/sketch/2095943" target="_blank">Code</a>
                             </div>
                         </div>
-                        <div class="textcard">
-                            <p class="titlecard">The Gravity</p>
-                            <p class="sublicard">Mini simulação do movimento gravitacional entre a Terra e a lua. Usando a formula da gravitação universal. Apresentado como trabalho final de uma disciplina.</p>
-                            <div class="tecard">
+                        <div class="card-name-section">
+                            <p class="card-name-section-title">The Gravity</p>
+                            <p class="card-name-section-subtitle">Mini simulação do movimento gravitacional entre a Terra e a lua. Usando a formula da gravitação universal. Apresentado como trabalho final de uma disciplina.</p>
+                            <div class="card-name-section-technology">
                                 <p>JavaScript</p>
                                 <p>P5.js</p>
                             </div>
                         </div>
                     </div>
                    
-                    <div id="projectcardfrogger" class="cards">
-                        <div class="actioncard">
-                            <img src="assets/imgproject/sapinho.png" alt="" width="190" height="95">
+                    <div id="frogger-project-card" class="card-block">
+                        <div class="card-action-section">
+                            <img src="scr/imgproject/sapinho.png" alt="" width="190" height="95">
                             <div class="buttomcard">
                                 <a href="https://openprocessing.org/sketch/2161682" target="_blank">Deploy</a>
                                 <a href="https://openprocessing.org/sketch/2161682" target="_blank">Code</a>
                             </div>
                         </div>
-                        <div class="textcard">
-                            <p class="titlecard">Sapinho</p>
-                            <p class="sublicard">Remake do jogo do arcade Frogger, feito com P5.js</p>
-                            <div class="tecard">
+                        <div class="card-name-section">
+                            <p class="card-name-section-title">Sapinho</p>
+                            <p class="card-name-section-subtitle">Remake do jogo do arcade Frogger, feito com P5.js</p>
+                            <div class="card-name-section-technology">
                                 <p>JavaScript</p>
                                 <p>P5.js</p>
                             </div>
                         </div>
                     </div> 
 
-                   <div id="projectcardplaying" class="cards">
-                        <div class="actioncard">
-                            <img src="assets/imgproject/Playing.png" alt="" width="74" height="170">
+                   <div id="playing-project-card" class="card-block">
+                        <div class="card-action-section">
+                            <img src="scr/imgproject/Playing.png" alt="" width="74" height="170">
                             <div class="buttomcard">
                                 <a href="https://github.com/DaviCalo/Playing-mobile" target="_blank">Code</a>
                             </div>
                         </div>
-                        <div class="textcard">
-                            <p class="titlecard">Playing - Sign Up Page</p>
-                            <p class="sublicard">Sign up page do serviço de streaming de música Playing.</p>
-                            <div class="tecard">
+                        <div class="card-name-section">
+                            <p class="card-name-section-title">Playing - Sign Up Page</p>
+                            <p class="card-name-section-subtitle">Sign up page do serviço de streaming de música Playing.</p>
+                            <div class="card-name-section-technology">
                                 <p>Kotlin</p>
                                 <p>Android Studio</p>
                             </div>
                         </div>
                     </div>
 
-                    <div id="projectcardvaiah" class="cards">
-                        <div class="actioncard">
-                            <img src="assets/imgproject/vaiah.png" alt="" width="74" height="170">
+                    <div id="vaiah-project-card" class="card-block">
+                        <div class="card-action-section">
+                            <img src="scr/imgproject/vaiah.png" alt="" width="74" height="170">
                             <div class="buttomcard">
                                 <a href="https://github.com/DaviCalo/VAIAH-TIC-12" target="_blank">Code</a>
                             </div>
                         </div>
-                        <div class="textcard">
-                            <p class="titlecard">VAIAH - Cardápio Online</p>
-                            <p class="sublicard">Cardápio online do melhor restaurante nordestino: VAIAH.</p>
-                            <div class="tecard">
+                        <div class="card-name-section">
+                            <p class="card-name-section-title">VAIAH - Cardápio Online</p>
+                            <p class="card-name-section-subtitle">Cardápio online do melhor restaurante nordestino: VAIAH.</p>
+                            <div class="card-name-section-technology">
                                 <p>Java</p>
                                 <p>Android Studio</p>
                             </div>
                         </div>
                 </article>
                 
-                <article id="articlecontat">
-
+                <article id="contat-article-main">
+                   
                 </article>
                 <footer>
-                    <p>Vagamente projetado em Figma e codificado em Visual Studio Code, implantado com Vercel. Feito vagamente seguindo Fluet 2.</p>
+                    <p>Projetado no figma e codificado em visual studio, expirado pelo fluet 2.</p>
                 </footer>
             </main>
         </div>

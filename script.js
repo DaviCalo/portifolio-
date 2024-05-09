@@ -1,15 +1,15 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    document.getElementById('aboutmenav').classList.add('hover');
-    document.getElementById('linkaboutme').classList.add('hover');
+    document.getElementById('aboutme-nav').classList.add('hover');
+    document.getElementById('aboutme-link').classList.add('hover');
   });
 
-var aboutmenav = document.getElementById('aboutmenav');
-var aboutmesectionnav = document.getElementById('linkaboutme');
+var aboutmenav = document.getElementById('aboutme-nav');
+var aboutmesectionnav = document.getElementById('aboutme-link');
 
-var projectnav = document.getElementById('projectnav');
-var projectsectionnav = document.getElementById('linkproject');
+var projectnav = document.getElementById('project-nav');
+var projectsectionnav = document.getElementById('project-link');
 
-var contatnav = document.getElementById('contatnav');
+var contatnav = document.getElementById('contat-nav');
 
 const icons = {
     aboutmenav: aboutmenav.classList,
@@ -25,9 +25,9 @@ const addHover = (icon) => icons[icon].add('hover');
 var mains = document.getElementById('main').addEventListener('scroll', () => {
     var scrollVertical = document.getElementById('main').scrollTop;
 
-    var projectsectionTop = (document.getElementById('articleproject')).offsetTop; 
+    var projectsectionTop = (document.getElementById('project-article-main')).offsetTop; 
 
-    var contatsectionTop = (document.getElementById('articlecontat')).offsetTop; 
+    var contatsectionTop = (document.getElementById('contat-article-main')).offsetTop; 
 
     if (scrollVertical+50 >= projectsectionTop && scrollVertical <= contatsectionTop) {
         //GAMBIARRA
